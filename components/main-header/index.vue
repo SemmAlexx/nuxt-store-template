@@ -6,3 +6,4 @@
   </div>
 </template>
 <style lang="scss" scoped src="./index.scss"></style>
+<script src="./index.js"></script>
