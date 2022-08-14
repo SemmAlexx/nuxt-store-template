@@ -1,4 +1,5 @@
 export { default as MainHeader } from '../../components/main-header/index.js'
+export { default as Product } from '../../components/product/index.js'
 export { default as Sidebar } from '../../components/sidebar/index.js'
 
 // nuxt/nuxt.js#8607

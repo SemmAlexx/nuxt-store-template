@@ -2,6 +2,9 @@
   "MainHeader": {
     "description": "Auto imported from components/main-header/index.js"
   },
+  "Product": {
+    "description": "Auto imported from components/product/index.js"
+  },
   "Sidebar": {
     "description": "Auto imported from components/sidebar/index.js"
   }
