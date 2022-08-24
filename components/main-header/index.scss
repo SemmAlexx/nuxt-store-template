@@ -1,5 +1,25 @@
 .header {
   padding-top: 30px;
+  position: relative;
+  z-index: 100;
+  top: 0;
+  background-color: transparent;
+
+  &-menu {
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+
+    }
+
+    &__item {
+      max-width: 150px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 
   p {
     text-transform: uppercase;

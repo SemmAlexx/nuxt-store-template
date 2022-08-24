@@ -1,4 +1,8 @@
 .product {
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+  transition: ease-in-out .5s;
 
 
   .container {
@@ -14,21 +18,26 @@
     li {
       position: relative;
       height: 600px;
-      width: 700px;
+      width: 100%;
+      margin: auto;
+
 
       p {
+        font-size: 165px;
+        line-height: 100px;
+        z-index: 100;
         text-align: center;
-        font-size: 198px;
       }
 
       img {
-        top: 50%;
+        top: 56%;
         left: 50%;
         transform: translate(-50%, -50%);
         position: absolute;
-        width: 380px;
-        height: 550px;
+        width: 350px;
+        height: 530px;
         object-fit: cover;
+        transition: ease-in-out .3s;
       }
     }
   }

@@ -14,6 +14,7 @@ import { createStore } from './store.js'
 /* Plugins */
 
 import nuxt_plugin_plugin_5fd748cd from 'nuxt_plugin_plugin_5fd748cd' // Source: ./components/plugin.js (mode: 'all')
+import nuxt_plugin_vueslickcarousel_1c6345a5 from 'nuxt_plugin_vueslickcarousel_1c6345a5' // Source: ../plugins/vue-slick-carousel.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -212,6 +213,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_plugin_5fd748cd === 'function') {
     await nuxt_plugin_plugin_5fd748cd(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_vueslickcarousel_1c6345a5 === 'function') {
+    await nuxt_plugin_vueslickcarousel_1c6345a5(app.context, inject)
   }
 
   // Lock enablePreview in context

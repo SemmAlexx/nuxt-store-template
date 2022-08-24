@@ -90,6 +90,7 @@ export default {
     mounted() {
     },
     created() {
+        console.log(this.setTheme);
     },
     methods: {
         ...mapMutations({

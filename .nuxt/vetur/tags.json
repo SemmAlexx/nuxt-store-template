@@ -5,6 +5,9 @@
   "Product": {
     "description": "Auto imported from components/product/index.js"
   },
+  "Reviews": {
+    "description": "Auto imported from components/reviews/index.js"
+  },
   "Sidebar": {
     "description": "Auto imported from components/sidebar/index.js"
   }

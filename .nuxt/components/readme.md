@@ -8,4 +8,5 @@ You can directly use them in pages and other components without the need to impo
 
 - `<MainHeader>` | `<main-header>` (components/main-header/index.js)
 - `<Product>` | `<product>` (components/product/index.js)
+- `<Reviews>` | `<reviews>` (components/reviews/index.js)
 - `<Sidebar>` | `<sidebar>` (components/sidebar/index.js)
