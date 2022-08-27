@@ -1,7 +1,7 @@
 <template>
   <div class="reviews">
     <div class="container">
-      <vue-slick-carousel v-bind="settings" class="reviews__slider" ref="reviewSlider">
+      <vue-slick-carousel v-bind="mainSlide" class="reviews__slider" ref="reviewSlider">
         <div class="reviews__slider-slide" v-for="(item) in reviews" :style="{
     background: `-webkit-linear-gradient(to right, ${getTheme.bgStyle.from==='#d8d8d9'?'#232526':'#d8d8d9'}, ${getTheme.bgStyle.to==='#ffffff'?'#414345':'#ffffff'})`,
     background: `linear-gradient(to right, ${getTheme.bgStyle.from==='#d8d8d9'?'#232526':'#d8d8d9'}, ${getTheme.bgStyle.to==='#ffffff'?'#414345':'#ffffff'})`,
@@ -9,7 +9,19 @@
  }">
 
           <h2 :style="{ color:getTheme.bgStyle.color==='white'?'black':'white'}">{{ item.name }}</h2>
-          <img :src="item.images" :alt="item.name">
+          <vue-slick-carousel v-bind="smallSlide" :asNavFor="$refs.c2" ref="c1">
+            <div v-for="(el) in item.images" aria-current="true">
+              <img :src="el" :alt="item.name">
+            </div>
+
+          </vue-slick-carousel>
+          <vue-slick-carousel
+              v-bind="littleSliders" class="reviews__slider_little" ref="c2" :asNavFor="$refs.c1">
+            <div v-for="(el,index) in item.images" class="reviews__slider_little-slide"
+                 aria-current="true">
+              <img class="reviews__slider_little-slide-img" :src="el" :alt="item.name">
+            </div>
+          </vue-slick-carousel>
           <h3 :style="{ color:getTheme.bgStyle.color==='white'?'black':'white'}">{{ item.review }}</h3>
         </div>
       </vue-slick-carousel>

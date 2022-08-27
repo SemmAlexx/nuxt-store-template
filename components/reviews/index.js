@@ -9,7 +9,7 @@ export default {
     components: {},
     data() {
         return {
-            settings: {
+            mainSlide: {
                 "centerMode": true,
                 "centerPadding": "0px",
                 "focusOnSelect": true,
@@ -17,24 +17,47 @@ export default {
                 "speed": 500,
                 "slidesToShow": 3,
                 "slidesToScroll": 1,
+                "arrows": false,
+                "draggable": false
+            },
+            smallSlide: {
 
+                "speed": 500,
+                "focusOnSelect": true,
+                "arrows": false,
+
+                "infinite": true,
+            },
+            littleSliders: {
+                "slidesToShow": 3,
+                "focusOnSelect": true,
+                "speed": 500,
+                "infinite": true,
+                "draggable": false,
+                "arrows": false,
+                "dots": true,
+                "dotsClass": 'reviews__slider-dots'
             },
             reviews: [
-                {name: 'Homer', review: 'I think this card holder is very good', images: review1},
                 {
-                    name: 'Antony',
-                    review: 'Really pleased by what you received, it is of very good quality',
-                    images: review2_2
+                    name: 'Homer',
+                    review: 'I think this card holder is very good',
+                    images: [review1, review2, review1, review1, review1]
                 },
                 {
                     name: 'Antony',
                     review: 'Really pleased by what you received, it is of very good quality',
-                    images: review2_2
+                    images: [review1, review2_1, review1, review1, review1]
                 },
                 {
                     name: 'Antony',
                     review: 'Really pleased by what you received, it is of very good quality',
-                    images: review2_2
+                    images: [review1, review2_2, review1, review1, review1]
+                },
+                {
+                    name: 'Antony',
+                    review: 'Really pleased by what you received, it is of very good quality',
+                    images: [review1, review1, review1, review1, review1]
                 }
             ]
         }
